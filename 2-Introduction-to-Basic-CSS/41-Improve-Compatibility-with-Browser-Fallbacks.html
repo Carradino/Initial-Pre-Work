@@ -1,0 +1,16 @@
+<!-- Older browsers that don't support newer CSS features might require additonal coding to ensure compatiblity. For example,
+internet explorer doesn't support styles with CSS variables. To make the style more compatible it is a good idea to <section>
+  the background color separately.
+</section> -->
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
